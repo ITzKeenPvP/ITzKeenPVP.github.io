@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a472a, #2c5530, #1a472a);
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #4a7c59;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #8fbc8f;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #c0d8c0;
+    margin-bottom: 15px;
+}
+
+.seccion {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #8fbc8f;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #4a7c59;
+}
+
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background: rgba(74, 124, 89, 0.2);
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    color: #a8d5a8;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+li {
+    margin: 8px 0;
+    position: relative;
+}
+
+li::before {
+    content: "✅";
+    position: absolute;
+    left: -22px;
+}
+
+.experiencia {
+    background: rgba(74, 124, 89, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.experiencia.destacada {
+    border: 2px solid #8fbc8f;
+    background: rgba(143, 188, 143, 0.1);
+}
+
+.fecha {
+    color: #a0c4a0;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #4a7c59;
+    color: #a0c4a0;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 18px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
